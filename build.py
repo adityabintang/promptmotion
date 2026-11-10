@@ -89,23 +89,39 @@ add('w', f'''<section class="slide" data-cp="1">
     </div>
   </section>''')
 
-# ---------- Part 1 ----------
-part('p1', 'Everyone builds.<br><em>Nobody ships.</em>', 1)
-add('p1', PERTH['Building is cheap now'])
-add('p1', '''<section class="slide" data-cp="1">
-    <h2>GTM is <em>3 questions</em></h2>
+# ---------- Part 1 (from site/assets/From_Idea_to_Motion_Guidebook_FINAL.pdf) ----------
+P1_FLOW = '''<section class="slide" data-cp="1">
+    <h2>4 langkah, <em>1 video</em></h2>
     <div class="steps">
-      <div><span class="i">01</span><span class="t">Do people want it?</span><span class="s">validate</span></div>
-      <div><span class="i">02</span><span class="t">Can you market it well?</span><span class="s">sell</span></div>
-      <div><span class="i">03</span><span class="t">Can it grow beyond your circle?</span><span class="s">scale</span></div>
+      <div><span class="i">01</span><span class="t">Think</span><span class="s">creative brief</span></div>
+      <div><span class="i">02</span><span class="t">Plan</span><span class="s">storyboard</span></div>
+      <div><span class="i">03</span><span class="t">Build</span><span class="s">motion V1</span></div>
+      <div><span class="i">04</span><span class="t">Improve</span><span class="s">motion V2</span></div>
     </div>
-  </section>''')
-add('p1', '''<section class="slide center" data-cp="1">
-    <div class="grid g4" style="grid-template-columns:repeat(2,1fr);max-width:70vw">
-      <div><span class="label">Video producer</span><div class="n">Weeks</div><div class="s">per launch video</div></div>
-      <div><span class="label">AdaL</span><div class="n">20 min</div><div class="s">same launch quality</div></div>
+  </section>'''
+P1_BRIEF = '''<section class="slide" data-cp="1">
+    <h2>Putuskan pesannya <em>dulu</em></h2>
+    <div class="steps">
+      <div><span class="i">01</span><span class="t">Who</span><span class="s">siapa penontonnya?</span></div>
+      <div><span class="i">02</span><span class="t">Problem</span><span class="s">masalah apa yang mereka alami?</span></div>
+      <div><span class="i">03</span><span class="t">Message</span><span class="s">apa pesan utamanya?</span></div>
+      <div><span class="i">04</span><span class="t">Visual</span><span class="s">bagaimana menampilkannya?</span></div>
+      <div><span class="i">05</span><span class="t">Action</span><span class="s">apa langkah berikutnya?</span></div>
     </div>
-  </section>''')
+  </section>'''
+P1_STORY = '''<section class="slide center" data-cp="1">
+    <h2>12 detik, <em>3 scene</em></h2>
+    <div class="grid g4" style="grid-template-columns:repeat(3,1fr);max-width:80vw">
+      <div><span class="label">01 · Hook</span><div class="n">0–3s</div><div class="s">Bingung bikin motion video?</div></div>
+      <div><span class="label">02 · Value</span><div class="n">3–8s</div><div class="s">Brief. Build. Improve.</div></div>
+      <div><span class="label">03 · CTA</span><div class="n">8–12s</div><div class="s">Belajar bareng. Gratis.</div></div>
+    </div>
+  </section>'''
+
+part('p1', 'From idea<br><em>to motion.</em>', 1)
+add('p1', P1_FLOW)
+add('p1', P1_BRIEF)
+add('p1', P1_STORY)
 
 # ---------- Part 2 ----------
 part('p2', 'Your product at<br><em>their video grade</em>', 2)
@@ -223,7 +239,7 @@ for i, (ag, sec) in enumerate(S):
     sec = sec.replace('>', '>' + f, 1).replace('<section ', f'<section data-ag="{ag}" ', 1)
     out_s.append(sec)
 
-AGENDA = [('w', '09:00', '09:05', 'Welcome and setup'), ('p1', '09:05', '09:10', 'Everyone builds, nobody ships'),
+AGENDA = [('w', '09:00', '09:05', 'Welcome and setup'), ('p1', '09:05', '09:10', 'From idea to motion'),
           ('p2', '09:10', '09:30', 'Your product at their video grade'), ('p3', '09:30', '09:47', 'Apply it today'),
           ('p4', '09:47', '10:00', 'Hackathon, rewards, Q&A')]
 agenda_html = '<aside class="ag" id="ag"><button class="ag-pill" id="agPill" type="button"><span class="ag-clock" id="agClock">--:--</span><span class="ag-now" id="agNow"></span><span class="ag-left" id="agLeft"></span></button><div class="ag-panel"><div class="label">Agenda · PT</div><ol id="agList"></ol></div></aside><script>window.AGENDA=' + json.dumps(AGENDA) + '</script>'
