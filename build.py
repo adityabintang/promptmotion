@@ -63,10 +63,10 @@ def pair(ag, title, cells, cp=2):
 add('w', f'''<section class="slide" data-cp="1">
     <div class="two" style="grid-template-columns:1.2fr 1fr">
       <div>
-        <h1>Don't just prompt it.<br><em>Ship it.</em></h1>
-        <div class="when" style="margin-top:1.4rem;font-size:clamp(1.2rem,2.2vw,2.6rem)">Tue 27 Oct · 9:00 AM PT</div>
+        <h1>From idea<br><em>to motion.</em></h1>
+        <div class="when" style="margin-top:1.4rem;font-size:clamp(1.2rem,2.2vw,2.6rem)">Your AI Motion Playbook · Claude Code + Remotion</div>
       </div>
-      <img src="img/poster.png" alt="" style="width:100%;max-height:78vh;object-fit:contain;border-radius:18px;box-shadow:0 30px 60px -30px rgba(28,26,22,.6)">
+      <img src="img/poster-motion.png" alt="" style="width:100%;max-height:78vh;object-fit:contain;border-radius:18px;box-shadow:0 30px 60px -30px rgba(28,26,22,.6)">
     </div>
   </section>''')
 add('w', f'''<section class="slide" data-cp="1">
@@ -118,7 +118,7 @@ P1_STORY = '''<section class="slide center" data-cp="1">
     </div>
   </section>'''
 
-part('p1', 'From idea<br><em>to motion.</em>', 1)
+part('p1', 'Your first motion video<br><em>starts here.</em>', 1)
 add('p1', P1_FLOW)
 add('p1', P1_BRIEF)
 add('p1', P1_STORY)
@@ -250,7 +250,7 @@ out = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ship It</title>
+<title>From Idea to Motion</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
