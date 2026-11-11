@@ -205,7 +205,7 @@ add('p4', f'''<section class="slide" data-cp="3">
       <div><span class="i">02</span><span class="t">Drop the link in Discord</span><span class="s">#ai-general</span></div>
       <div><span class="i">03</span><span class="t">+1 month of AdaL Pro</span></div>
     </div>
-    {qr(DISCORD, 'discord.gg/tRnDmgqfct', 'Join the hackathon chat', 'clamp(130px,12vw,200px)')}
+    {qr(DISCORD, 'discord.gg/tRnDmgqfct', 'Join the workshops chat', 'clamp(130px,12vw,200px)')}
   </section>''')
 add('p4', f'''<section class="slide" data-cp="3">
     <h2><em>Nov 2, 11:59 PM PT</em></h2>
@@ -241,7 +241,7 @@ for i, (ag, sec) in enumerate(S):
 
 AGENDA = [('w', '09:00', '09:05', 'Welcome and setup'), ('p1', '09:05', '09:10', 'From idea to motion'),
           ('p2', '09:10', '09:30', 'Your product at their video grade'), ('p3', '09:30', '09:47', 'Apply it today'),
-          ('p4', '09:47', '10:00', 'Hackathon, rewards, Q&A')]
+          ('p4', '09:47', '10:00', 'Workshops, rewards, Q&A')]
 agenda_html = '<aside class="ag" id="ag"><button class="ag-pill" id="agPill" type="button"><span class="ag-clock" id="agClock">--:--</span><span class="ag-now" id="agNow"></span><span class="ag-left" id="agLeft"></span></button><div class="ag-panel"><div class="label">Agenda · PT</div><ol id="agList"></ol></div></aside><script>window.AGENDA=' + json.dumps(AGENDA) + '</script>'
 
 js = open(f'{H}/deck.js').read()
