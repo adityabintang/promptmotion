@@ -20,7 +20,7 @@ PROMO = f'https://adal.sylph.ai/sign-up?redirect_url=%2Fsubscription%3Ftier%3Dpr
 INSTALL = f'https://adalagent.ai/install?{UTM}&amp;utm_content=jax_slides_install_1'
 LIBRARY = f'https://adalagent.ai/launch-library?{UTM}&amp;utm_content=jax_slides_launch_library_1'
 DISCORD = 'https://discord.gg/tRnDmgqfct'
-FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSey1MnU7A-8iLWiucdOtUzUCrefLE-E7yw6WzAZwHhvlAZA6w/viewform'
+FORM = 'https://adalagent.ai/launch-library'
 
 S = []
 def add(ag, sec): S.append((ag, sec))
@@ -75,7 +75,7 @@ add('w', f'''<section class="slide" data-cp="1">
       <div><span class="i">01</span><span class="t">Redeem SHIPIT1MO</span><span class="s">1 month of Pro</span></div>
       <div><span class="i">02</span><span class="t">Install AdaL Desktop</span><span class="s">adalagent.ai/install</span></div>
       <div><span class="i">03</span><span class="t">Open your product folder</span></div>
-      <div><span class="i">04</span><span class="t">Say hi in Discord</span><span class="s">#🥷adal-online-hackathon</span></div>
+      <div><span class="i">04</span><span class="t">Say hi in Discord</span><span class="s">#ai-general</span></div>
     </div>
   </section>''')
 add('w', f'''<section class="slide" data-cp="1">
@@ -141,7 +141,7 @@ prompt('p2', 'Prompt <em>1</em>', "Video: LINK\n\n(Use the video attached to thi
 prompt('p2', 'Prompt <em>2</em>', "ok replicate one using AdaL video producer from scratch", 2)
 add('p2', '''<section class="slide center" data-cp="2">
     <h1 style="font-size:clamp(3rem,7vw,7.4rem)">Send prompt 1 <em>now</em></h1>
-    <div class="when" style="margin-top:2rem;font-size:clamp(1rem,1.8vw,2rem);line-height:1.6">Post in #🔆hackathon-discussions:<br>which video, which model, a screenshot of your AdaL Desktop</div>
+    <div class="when" style="margin-top:2rem;font-size:clamp(1rem,1.8vw,2rem);line-height:1.6">Post in #community-project-showcase:<br>which video, which model, a screenshot of your AdaL Desktop</div>
   </section>''')
 # ---------- Part 3 (B2B, filled from the registrant research) ----------
 part('p3', 'Apply it <em>today</em>', 3)
@@ -202,13 +202,13 @@ add('p4', f'''<section class="slide" data-cp="3">
     <h2>Post it, <em>get rewarded</em></h2>
     <div class="steps">
       <div><span class="i">01</span><span class="t">Post your video tagging @adalagent</span><span class="s">X or LinkedIn</span></div>
-      <div><span class="i">02</span><span class="t">Drop the link in Discord</span><span class="s">#🥷adal-online-hackathon</span></div>
+      <div><span class="i">02</span><span class="t">Drop the link in Discord</span><span class="s">#ai-general</span></div>
       <div><span class="i">03</span><span class="t">+1 month of AdaL Pro</span></div>
     </div>
     {qr(DISCORD, 'discord.gg/tRnDmgqfct', 'Join the hackathon chat', 'clamp(130px,12vw,200px)')}
   </section>''')
 add('p4', f'''<section class="slide" data-cp="3">
-    <h2>Hackathon · <em>Nov 2, 11:59 PM PT</em></h2>
+    <h2><em>Nov 2, 11:59 PM PT</em></h2>
     <div class="grid g4" style="grid-template-columns:repeat(3,1fr)">
       <div><span class="label">1st</span><div class="t">1 year of AdaL Pro</div><div class="s">Featured on AdaL channels</div></div>
       <div><span class="label">2nd</span><div class="t">6 months of Pro</div></div>
